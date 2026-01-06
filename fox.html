@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖萌鬼怪 - 九尾狐詳情</title>
+    <style>
+        /* 延用 UI 視覺規範 */
+        :root {
+            --bg-color: #4a0101;      /* 背景色：血紅 (深) */
+            --text-color: #D9E8D7;    /* 文字色：淡綠 */
+            --accent-color: #A786A7;  /* 強調色：淡紫 */
+            --decoration: #1B4332;    /* 輔助色：墨綠 */
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a0000 0%, var(--bg-color) 100%);
+            background-attachment: fixed;
+            color: var(--text-color);
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .detail-card {
+            background: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid var(--accent-color); /* 改用淡紫邊框，對應靈獸氣息 */
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        /* 返回按鈕 */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--text-color);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .back-link:hover { color: var(--accent-color); }
+
+        /* 標題 */
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.8rem;
+            margin: 10px 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* 圖片區塊 */
+        .image-box {
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 0 20px rgba(167, 134, 167, 0.3);
+        }
+
+        /* 內容文字 */
+        .content-section {
+            line-height: 2;
+            font-size: 1.15rem;
+        }
+        .content-section h3 {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--decoration);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .warning-tag {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            background: rgba(167, 134, 167, 0.2);
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="detail-card">
+        <a href="index.html" class="back-link">← 返回圖鑑列表</a>
+        
+        <p style="color: var(--accent-color); margin-bottom: 0;">傳說生物詳解</p>
+        <h1>九尾狐 (Nine-tailed Fox)</h1>
+
+        <div class="image-box">
+            <img src="https://monsterpage688313272.wordpress.com/wp-content/uploads/2018/04/e59bbee7898711.png?w=569&h=380" alt="九尾狐圖樣">
+        </div>
+
+        <div class="content-section">
+            <h3>【生物簡介】</h3>
+            <p>
+                九尾狐是古代中國神話傳說中的奇獸。據《山海經》記載，牠們居住在青丘之國，外貌像狐狸卻擁有九條尾巴。其聲音如同嬰兒啼哭，能食人，但也能庇佑食用牠肉的人不逢妖邪之氣。
+            </p>
+
+            <h3>【傳說故事】</h3>
+            <p>
+                在早期的神話中，九尾狐常被視為「太平之瑞」，象徵著子孫繁息與國家興旺。然而到了明清小說（如《封神演義》）中，九尾狐逐漸演變為嫵媚、善於幻化成絕世美女（如蘇妲己）來迷惑君王的妖狐形象。這種轉變展現了傳說文化在不同時代的演進。
+            </p>
+
+            <h3>【受眾建議】</h3>
+            <p class="warning-tag">
+                本篇內容適合對神話演變有興趣者，建議閱讀年齡：12 歲以上。
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

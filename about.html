@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖萌鬼怪 - 本站簡介</title>
+    <style>
+        /* 延用 UI 視覺規範 */
+        :root {
+            --bg-color: #4a0101;      /* 背景色 */
+            --text-color: #D9E8D7;    /* 文字色 */
+            --accent-color: #A786A7;  /* 強調色 */
+            --decoration: #1B4332;    /* 輔助色 */
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a0000 0%, var(--bg-color) 100%);
+            background-attachment: fixed;
+            color: var(--text-color);
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-card {
+            background: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid var(--decoration);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+        }
+
+        h1 { color: var(--accent-color); font-size: 2.5rem; }
+        
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+        .section h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--decoration);
+            padding-bottom: 10px;
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--accent-color);
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-card">
+        <a href="index.html" class="back-link">← 返回首頁</a>
+        
+        <h1>本站簡介</h1>
+        <p class="quote">「消除對一個東西恐懼最好的方法是了解它」</p>
+
+        <div class="section">
+            <h2>專案目標</h2>
+            <p>
+                本站致力於為對中國傳說生物有興趣，但不想翻閱厚重古籍的人提供一個**線上數位圖鑑**。
+                透過淺顯易懂的文字與精美的視覺呈現，讓這些隱藏在歷史長河中的神祕生物重新走入現代視野。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>建議受眾</h2>
+            <p>
+                對充滿傳說色彩、奇幻要素或是恐怖故事裡的生物有強烈好奇心的人。
+                **建議 12 歲以上使用**，以便更好地理解傳說背後的文化寓意。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>網站理念</h2>
+            <p>
+                我們相信，恐懼往往源自於未知。當我們了解了饕餮的貪婪、九尾狐的靈動與麒麟的仁慈，
+                這些「鬼怪」就不再只是噩夢中的影子，而是文化傳承中鮮活的一部分。
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

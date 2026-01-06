@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖萌鬼怪 - 中國傳說生物圖鑑</title>
+    <style>
+        /* UI */
+        :root {
+            --bg-color: #4a0101;      /* 背景色：血紅 (深) */
+            --text-color: #D9E8D7;    /* 文字色：淡綠 */
+            --accent-color: #A786A7;  /* 強調色：淡紫 */
+            --decoration: #1B4332;    /* 輔助色：墨綠 */
+            --card-hover: #F0F0F0;    /* 中介色：淡灰 */
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a0000 0%, var(--bg-color) 100%);
+            background-attachment: fixed;
+            color: var(--text-color);
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 導覽列 */
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a { color: var(--text-color); text-decoration: none; margin: 0 20px; font-weight: bold; }
+
+        header { text-align: center; padding: 60px 20px; border-bottom: 2px solid var(--decoration); }
+        header h1 { font-size: 2.5rem; color: var(--accent-color); }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 20px; }
+
+        /* 卡片設計 */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--decoration);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .card:hover { background: var(--card-hover); color: #222; transform: translateY(-5px); }
+
+        /* 讓卡片內的圖片大小統一 */
+        .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* 自動裁剪圖片以填滿區域，不變形 */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--decoration); /* 墨綠邊框 */
+}
+
+        /* 彈窗 (Modal) 樣式 */
+        .modal {
+            display: none; 
+            position: fixed; z-index: 1000; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            background: #2b0000; border: 2px solid var(--accent-color);
+            margin: 10% auto; padding: 30px; width: 80%; max-width: 600px;
+            border-radius: 15px; position: relative; color: var(--text-color);
+        }
+        .close { position: absolute; top: 10px; right: 20px; font-size: 28px; cursor: pointer; color: var(--accent-color); }
+
+        .section-box { background: rgba(0, 0, 0, 0.3); padding: 30px; border-radius: 15px; margin-top: 50px; border-left: 5px solid var(--accent-color); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#list">各式生物</a>
+        <a href="about.html">本站簡介</a>
+    </nav>
+
+    <header id="home">
+        <h1>妖萌鬼怪</h1>
+        <p>～消除對一個東西恐懼最好的方法是了解它～</p>
+    </header>
+
+    <div class="grid">
+    <a href="detail.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <img src="https://storage.moegirl.org.cn/moegirl/commons/7/7d/%E9%A5%95%E9%A4%AE%E5%A4%A9%E4%B9%8B%E7%97%95.jpg" alt="饕餮"> <h3>饕餮 (Tāo Tiè)</h3>
+            <p>貪食之首，古代四凶之一</p>
+        </div>
+    </a>
+
+    <a href="fox.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <img src="https://monsterpage688313272.wordpress.com/wp-content/uploads/2018/04/e59bbee7898711.png?w=569&h=380" alt="九尾狐">
+            <h3>九尾狐</h3>
+            <p>幻化萬千，靈動的神祕靈獸</p>
+        </div>
+    </a>
+
+    <a href="qilin.html" style="text-decoration: none; color: inherit;">
+        <div class="card">
+            <img src="https://www.merit-times.com.tw/news_pic/20240730/C20240729220357954.jpg" alt="麒麟">
+            <h3>麒麟</h3>
+            <p>仁德化身，象徵盛世的祥瑞</p>
+        </div>
+    </a>
+
+    <a href="jian.html" style="text-decoration: none; color: inherit;">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1B4332/D9E8D7?text=Jian+Bird" alt="比翼鳥">
+        <h3>比翼鳥 (Jiǎn)</h3>
+        <p>不離不棄，生死相隨的奇鳥</p>
+    </div>
+</a>
+
+<a href="taowu.html" style="text-decoration: none; color: inherit;">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1B4332/D9E8D7?text=Tao+Wu" alt="檮杌">
+        <h3>檮杌 (Táo Wù)</h3>
+        <p>頑固不化，極其兇猛的惡獸</p>
+    </div>
+</a>
+
+<a href="baize.html" style="text-decoration: none; color: inherit;">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200/1B4332/D9E8D7?text=Bai+Ze" alt="白澤">
+        <h3>白澤 (Bái Zé)</h3>
+        <p>萬妖之祖，通曉天下的守護神</p>
+    </div>
+</a>
+</div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle" style="color: var(--accent-color);"></h2>
+            <hr style="border: 0.5px solid var(--decoration);">
+            <p id="modalBody"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, text) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalBody').innerText = text;
+            document.getElementById('infoModal').style.display = "block";
+        }
+        function closeModal() {
+            document.getElementById('infoModal').style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('infoModal')) {
+                closeModal();
+            }
+        }
+    </script>
+
+</body>
+</html>

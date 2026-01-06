@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妖萌鬼怪 - 饕餮詳情</title>
+    <style>
+        /* 1. UI 視覺規範 */
+        :root {
+            --bg-color: #4a0101;      /* 背景色：血紅 (深) */
+            --text-color: #D9E8D7;    /* 文字色：淡綠 */
+            --accent-color: #A786A7;  /* 強調色：淡紫 */
+            --decoration: #1B4332;    /* 輔助色：墨綠 */
+        }
+
+        body {
+            background: linear-gradient(180deg, #1a0000 0%, var(--bg-color) 100%);
+            background-attachment: fixed;
+            color: var(--text-color);
+            font-family: "Microsoft JhengHei", sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .detail-card {
+            background: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20px;
+            border: 2px solid var(--decoration); /* 墨綠邊框裝飾 */
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+        }
+
+        /* 返回按鈕 */
+        .back-link {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-color);
+            transition: 0.3s;
+        }
+        .back-link:hover { color: var(--accent-color); border-color: var(--accent-color); }
+
+        /* 標題 */
+        h1 {
+            color: var(--accent-color); /* 淡紫色標題 */
+            font-size: 2.8rem;
+            margin: 10px 0;
+        }
+
+        /* 圖片區塊 */
+        .image-box {
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid var(--decoration);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        /* 內容文字 */
+        .content-section {
+            line-height: 2;
+            font-size: 1.15rem;
+        }
+        .content-section h3 {
+            color: var(--accent-color);
+            border-left: 5px solid var(--decoration);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        /* 受眾警示 */
+        .warning-tag {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            background: rgba(27, 67, 50, 0.4);
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="detail-card">
+        <a href="index.html" class="back-link">← 返回圖鑑列表</a>
+        
+        <p style="color: var(--accent-color); margin-bottom: 0;">傳說生物詳解</p>
+        <h1>饕餮 (Tāo Tiè)</h1>
+
+        <div class="image-box">
+            <img src="https://storage.moegirl.org.cn/moegirl/commons/7/7d/%E9%A5%95%E9%A4%AE%E5%A4%A9%E4%B9%8B%E7%97%95.jpg" alt="饕餮圖樣">
+        </div>
+
+        <div class="content-section">
+            <h3>【生物簡介】</h3>
+            <p>
+                饕餮是中國古代神話中的一種神祕怪獸，被列為「四凶」之一。
+                根據記載，牠的長相非常奇特：羊身人面，眼睛長在腋下，並擁有一口如虎般的利齒。
+            </p>
+
+            <h3>【傳說故事】</h3>
+            <p>
+                饕餮最大的特點就是「極其貪食」。牠因為太過貪婪，看到什麼就吃什麼，
+                最後甚至把自己全身的皮肉都吃光了，只剩下一個巨大的頭部。
+                在青銅器時代，人們常將這種「有首無身」的紋路刻於鼎上，用來警示後人不要過於貪婪。
+            </p>
+
+            <h3>【受眾建議】</h3>
+            <p class="warning-tag">
+                本篇內容適合對神話有興趣者，建議閱讀年齡：12 歲以上。
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
